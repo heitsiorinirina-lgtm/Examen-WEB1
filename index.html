@@ -17,12 +17,18 @@
 <body>
     <header>
         <nav id="navbar">
-            <img src="images/extendedLogo.png" alt="BE LOYAL IT" class="logo">
+            <a href="index.html"><img src="images/extendedLogo.png" alt="BE LOYAL IT" class="main-logo"></a>
+            <input type="checkbox" id="mobile-menu-toggle-checkbox">
+            <label for="mobile-menu-toggle-checkbox" class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
             <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Our services</a></li>
-                <li><a href="#">Our partners</a></li>
-                <li class="cta-button"><a href="#">Contact us</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Our services</a></li>
+                <li><a href="#partners">Our partners</a></li>
+                <li class="cta-button"><a href="contact.html">Contact us</a></li>
             </ul>
         </nav>
     </header>
@@ -33,23 +39,24 @@
                 <h1>Your Trusted IT Partner</h1>
                 <p>Providing reliable and innovative IT solutions to help your business thrive in the digital age.</p>
                 <div class="cta">
-                    <button class="cta-button"><a href="#">Learn More</a></button>
-                    <button class="cta-button"><a href="#">Check our services</a></button>
+                    <a href="#partners" class="cta-button">Learn More</a>
+                    <a href="services.html" class="cta-button">Check our services</a>
                 </div>
             </div>
             <div class="side-image">
-                <img src="images/heroImage.png" alt="IT Solutions">
+                <img src="images/heroImage.png" alt="IT Solutions" id="hero-image">
             </div>
         </section>
         <section class="about-us">
-            <div class="side-image"><img src="images/about.png">
+            <div class="side-image">
+                <img src="images/about.png" alt="About BeLoyalIT">
             </div>
             <div class="text">
                 <h1>About us</h1>
                 <p>
                     BeLoyalIT was established in 2012 by a team of experienced professionals who collaborated in the
                     Information Technology
-                    Field. With our collective experience in the voice and data solutions
+                    field. With our collective experience in the voice and data solutions
                     environment, our team
                     continues to grow and contribute significantly to the company's overall success.
                     Throughout the years, our client base has expanded considerably, and we attribute a large part of
@@ -81,55 +88,90 @@
                 </p>
             </div>
         </section>
-        <section class="reinforcement">
+        <section class="reasons">
             <div class="text">
                 <h1>Why should you choose Be Loyal IT?</h1>
                 <div class="reason">
-                    <img src="images/businessScale.png">
-                    <div class="text">
-                        <p>
+                    <img src="images/businessScale.png" alt="Business scale illustration">
+                    <div class="text-reason">
                         <h2>Business scale</h2>
-                        Whether you are running a small business or worried about fast-paced changes, you need a strong
-                        backbone in the form of IT support through robust software application, informative intranet,
-                        and IT
-                        infrastructure. BeLoyalIT can meet your requirements with a customized solution for your
-                        business.
+                        <p>
+                            Whether you are running a small business or worried about fast-paced changes, you need a
+                            strong
+                            backbone in the form of IT support through robust software application, informative
+                            intranet,
+                            and IT
+                            infrastructure. BeLoyalIT can meet your requirements with a customized solution for your
+                            business.
                         </p>
                     </div>
                 </div>
                 <div class="reason">
-                    <div class="text">
-                        <p>
+                    <div class="text-reason">
                         <h2>Low cost</h2>
-                        Our customized and cost-effective IT services offer up to 40% direct cost savings compared to
-                        in-house resources. Choose us as your IT service provider today to align, transform, and evolve
-                        your
-                        business with strong IT support. Our tailored service plans maximize productivity, uptime, and
-                        profitability. Whether you have a smaller project, our per-hour-charge price model is available.
-                        We
-                        provide specific solutions for small business IT services, ensuring your satisfaction.</p>
+                        <p>
+                            Our customized and cost-effective IT services offer up to 40% direct cost savings compared
+                            to
+                            in-house resources. Choose us as your IT service provider today to align, transform, and
+                            evolve
+                            your
+                            business with strong IT support. Our tailored service plans maximize productivity, uptime,
+                            and
+                            profitability. Whether you have a smaller project, our per-hour charge pricing model is
+                            available.
+                            We
+                            provide specific solutions for small business IT services, ensuring your satisfaction.</p>
                     </div>
-                    <img src="images/Lowcost.png">
+                    <img src="images/Lowcost.png" alt="Low cost illustration">
+                </div>
+                <div class="reason">
+                    <img src="images/Commitment.png" alt="Commitment illustration">
+                    <div class="text-reason">
+                        <h2>Our commitment</h2>
+                        <p>
+                            Our IT professionals are among the most experienced and qualified in the IT industry today,
+                            so
+                            you
+                            can rest assured that your work is performed by experts. The technical expertise, experience
+                            and
+                            knowledge of our IT team
+                            give us an edge over other companies providing similar services. This expertise is reflected
+                            directly in the quality of all our finished projects.</p>
+                    </div>
                 </div>
             </div>
-            <div class="reason">
-                <img src="images/Commitment.png">
-                <div class="text">
-                    <h2>Our commitment</h2>
-                    Our IT professionals are among the most experienced and qualified in the IT industry today, so you
-                    can rest assured that your work is performed by experts. The technical expertise, experience and
-                    knowledge of our IT team
-                    give us an edge over other companies providing similar services. This expertise is reflected
-                    directly in quality of all our finished projects.</p>owledge of our IT team
-                    give us an edge over other companies providing similar services. This expertise is reflected
-                    directly in quality of all our finished projects.</p>
+            <a href="services.html" class="cta-button">Check our services for more</a>
+        </section>
+        <section id="partners">
+            <h3>Our partners</h3>
+            <div class="logos">
+                <div class="logo">
+                    <img src="images/airtel africa.jpg" alt="Airtel Africa">
+                    <p>Airtel Africa</p>
+                </div>
+                <div class="logo">
+                    <img src="images/IBM.jpg" alt="IBM">
+                    <p>IBM</p>
+                </div>
+                <div class="logo">
+                    <img src="images/Sarysmatik.png" alt="Sarysmatik">
+                    <p>Sarysmatik</p>
+                </div>
+                <div class="logo">
+                    <img src="images/Global-Telectronix Services International.jpg"
+                        alt="Global Telectronix Services International">
+                    <p>Global Telectronix Services International</p>
+                </div>
+                <div class="logo">
+                    <img src="images/Contingent Network Services LLC.png" alt="Contingent Network Services LLC">
+                    <p>Contingent Network Services LLC</p>
                 </div>
             </div>
-            </div>
-            </div>
-
         </section>
     </main>
+    <footer>
+        <p>&copy; 2024 BE LOYAL IT. All rights reserved.</p>
+    </footer>
 </body>
 
 </html>
