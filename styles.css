@@ -9,13 +9,14 @@
   --color-bg: #f8f9fa;
   --font-family: "Montserrat", sans-serif;
   --transition: 0.3s ease;
-  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
-  --shadow-md: 0 2px 8px rgba(0, 0, 0, 0.1);
-  --shadow-lg: 0 10px 27px rgba(0, 0, 0, 0.05);
+  --shadow-small: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-medium: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --shadow-logo: 0 10px 27px rgba(0, 0, 0, 0.05);
+  --shadow-clear: 0 0px 50px rgb(255, 255, 255);
   --border-radius: 8px;
-  --spacing-sm: 1rem;
-  --spacing-md: 2rem;
-  --spacing-lg: 4rem;
+  --spacing-small: 1rem;
+  --spacing-medium: 3rem;
+  --spacing-logo: 4rem;
 }
 
 * {
@@ -59,12 +60,12 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 0.2rem var(--spacing-lg);
+  padding: 0.2rem var(--spacing-logo);
   position: fixed;
   background-color: var(--color-white);
   top: 0;
   z-index: 1000;
-  box-shadow: var(--shadow-sm);
+  box-shadow: var(--shadow-small);
 }
 
 .mobile-menu-toggle {
@@ -94,7 +95,7 @@ body {
   display: flex;
   align-items: center;
   list-style: none;
-  gap: var(--spacing-lg);
+  gap: var(--spacing-logo);
   margin: 0;
   padding: 0;
 }
@@ -112,7 +113,7 @@ body {
 .cta-button {
   background-color: var(--color-primary);
   color: var(--color-white);
-  padding: var(--spacing-sm);
+  padding: var(--spacing-small);
   border: none;
   font-size: 1.1rem;
   width: max-content;
@@ -142,8 +143,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem var(--spacing-lg) var(--spacing-lg);
-  gap: var(--spacing-md);
+  padding: 6rem var(--spacing-logo) var(--spacing-logo);
+  gap: var(--spacing-medium);
   min-height: calc(100vh - 85px);
   flex-wrap: wrap;
 }
@@ -169,6 +170,14 @@ body {
   object-fit: contain;
 }
 
+#hero-image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  object-fit: contain;
+  box-shadow: var(--shadow-clear);
+}
+
 a {
   color: var(--color-text);
   text-decoration: none;
@@ -176,8 +185,8 @@ a {
 
 .cta {
   display: flex;
-  justify-content: flex-start;
-  gap: var(--spacing-md);
+  justify-content: center;
+  gap: var(--spacing-medium);
   flex-wrap: wrap;
 }
 
@@ -192,20 +201,21 @@ a {
 }
 
 .hero-content h1 {
-  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-size: clamp(1.2rem, 3vw, 2rem);
 }
 
 .hero-header {
   font-size: clamp(1.2rem, 3vw, 2rem);
+  font-weight: bold;
 }
 
 .about-us {
-  padding: var(--spacing-md);
+  padding: var(--spacing-medium);
   display: flex;
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
-  gap: var(--spacing-md);
+  gap: var(--spacing-medium);
   background-image: linear-gradient(
     to bottom right,
     var(--color-primary),
@@ -218,17 +228,18 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: var(--spacing-md);
+  padding: var(--spacing-medium);
   width: 100%;
 }
 
 .text h1 {
   font-family: var(--font-family);
   color: var(--color-white);
+  font-size: 52px;
 }
 
 .text p {
-  margin-top: var(--spacing-sm);
+  margin-top: var(--spacing-small);
   text-indent: 3rem;
   color: var(--color-white);
   line-height: 1.6;
@@ -391,7 +402,7 @@ a {
   background-color: var(--color-white);
   padding: 2.5rem;
   border-radius: 8px;
-  box-shadow: var(--shadow-md);
+  box-shadow: var(--shadow-medium);
 }
 
 .contact-info h2 {
@@ -432,7 +443,7 @@ a {
   background-color: var(--color-white);
   padding: 2.5rem;
   border-radius: 8px;
-  box-shadow: var(--shadow-md);
+  box-shadow: var(--shadow-medium);
   margin-block: 2rem;
 }
 
@@ -539,7 +550,7 @@ a {
 .product-card {
   background-color: var(--color-white);
   border-radius: 8px;
-  box-shadow: var(--shadow-md);
+  box-shadow: var(--shadow-medium);
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -717,7 +728,7 @@ footer p {
     text-align: center;
     padding: 0%;
     transition: left var(--transition);
-    box-shadow: var(--shadow-lg);
+    box-shadow: var(--shadow-logo);
     gap: 0;
     transition: top 0.3s ease;
   }
