@@ -15,6 +15,7 @@
 </head>
 
 <body>
+    <div id="top"></div>
     <header>
         <nav id="navbar">
             <a href="index.html"><img src="images/extendedLogo.png" alt="BE LOYAL IT" class="main-logo"></a>
@@ -25,9 +26,8 @@
                 <span></span>
             </label>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
+                <li class="underlined"><a href="index.html">Home</a></li>
                 <li><a href="services.html">Our services</a></li>
-                <li><a href="#partners">Our partners</a></li>
                 <li class="cta-button"><a href="contact.html">Contact us</a></li>
             </ul>
         </nav>
@@ -39,7 +39,7 @@
                 <h1>Your Trusted IT Partner</h1>
                 <p>Providing reliable and innovative IT solutions to help your business thrive in the digital age.</p>
                 <div class="cta">
-                    <a href="#partners" class="cta-button">Learn More</a>
+                    <a href="#about" class="cta-button">Learn More</a>
                     <a href="services.html" class="cta-button">Check our services</a>
                 </div>
             </div>
@@ -47,10 +47,11 @@
                 <img src="images/heroImage.png" alt="IT Solutions" id="hero-image">
             </div>
         </section>
-        <section class="about-us">
-            <div class="side-image">
-                <img src="images/about.png" alt="About BeLoyalIT">
-            </div>
+        <a href="#top">
+            <div class="arrow"><i class="fa-solid fa-arrow-up"></i></div>
+        </a>
+        <section class="about-us" id="about">
+
             <div class="text">
                 <h1>About us</h1>
                 <p>
@@ -143,7 +144,7 @@
             <a href="services.html" class="cta-button">Check our services for more</a>
         </section>
         <section id="partners">
-            <h3>Our partners</h3>
+            <h1>Our partners</h1>
             <div class="logos">
                 <div class="logo">
                     <img src="images/airtel africa.jpg" alt="Airtel Africa">
@@ -170,6 +171,41 @@
         </section>
     </main>
     <footer>
+        <div class="footer-content">
+            <div class="footer-info-company">
+                <a href="index.html"><img src="images/abbreviatedLogo.png" alt="BeLoyalIT " class="footer-logo"></a>
+                <p id="address">Lot III P 20 GE Marohoho Tsimbazaza, Antananarivo, Madagascar, 101</p>
+                <p id="phone-number">+261 33 82 044 88</p>
+                <p id="email">contact@beloyalit.com</p>
+                <div class="socials">
+                    <a href="https://www.facebook.com/BeLoyalIT" target="_blank"><img
+                            src="images/facebook-brands-solid-full.svg" alt=""></a>
+                    <a href="https://www.linkedin.com/company/beloyalit/" target="_blank"><img
+                            src="images/linkedin-brands-solid-full.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="link-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Our services</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                        <li> <a href="index.html#partners">Our partners</a></li>
+                    </ul>
+                </div>
+                <div class="link-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html#networking">Networking</a></li>
+                        <li><a href="services.html#software-development">Software Development</a></li>
+                        <li><a href="services.html#it-consulting">IT Consulting</a></li>
+                        <li><a href="services.html#cybersecurity">Cybersecurity</a></li>
+                        <li><a href="services.html#cloud-services">Cloud Services</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
         <p>&copy; 2024 BE LOYAL IT. All rights reserved.</p>
     </footer>
 </body>
